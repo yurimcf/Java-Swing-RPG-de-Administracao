@@ -1,6 +1,8 @@
 package View;
 
-import static Controler.telaGame.pergunta;
+import Controler.TelaGame;
+
+import static Controler.TelaGame.pergunta;
 import javax.swing.JOptionPane;
 
 
@@ -234,13 +236,13 @@ public class telaGame extends javax.swing.JFrame {
 
     private void btnPauseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPauseActionPerformed
         
-        Controler.telaGame.botaoPause();
+        TelaGame.botaoPause();
                 
     }//GEN-LAST:event_btnPauseActionPerformed
 
     private void btnSimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimActionPerformed
                
-        Controler.telaGame.mainSIM();
+        TelaGame.mainSIM();
         if((barraDinheiro.getValue() == 0)|| (barraCliente.getValue() == 0) || (barraFuncionarios.getValue() == 0)){
                     
                 Object [] op = {"Jogar novamente", "Sair"};
@@ -284,7 +286,7 @@ public class telaGame extends javax.swing.JFrame {
 
     private void btnNaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNaoActionPerformed
         
-        Controler.telaGame.mainNAO();
+        TelaGame.mainNAO();
         
         if((barraDinheiro.getValue() == 0)|| (barraCliente.getValue() == 0) || (barraFuncionarios.getValue() == 0)){
                     
@@ -345,7 +347,7 @@ public class telaGame extends javax.swing.JFrame {
 
     private void voltarPauseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarPauseActionPerformed
         
-        Controler.telaGame.botaoVoltar();
+        TelaGame.botaoVoltar();
         
     }//GEN-LAST:event_voltarPauseActionPerformed
 
@@ -359,7 +361,7 @@ public class telaGame extends javax.swing.JFrame {
 
     private void infoIconActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infoIconActionPerformed
         
-        Controler.telaGame.check();
+        TelaGame.check();
         
     }//GEN-LAST:event_infoIconActionPerformed
 
